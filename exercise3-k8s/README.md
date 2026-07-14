@@ -90,9 +90,9 @@ localhost:8080
 Running `eval $(minikube docker-env)` before `docker build` points the Docker CLI at minikube's **internal** Docker daemon. The image therefore lives inside the cluster without ever being pushed to a remote registry. The Deployment manifests use `imagePullPolicy: Never` to confirm this intent.
 
 This approach:
-- ✅ Zero cost (no registry fees or data transfer)
-- ✅ No credentials required
-- ✅ Fast iteration — rebuild and redeploy without a push/pull round-trip
+- Zero cost (no registry fees or data transfer)
+- No credentials required
+- Fast iteration — rebuild and redeploy without a push/pull round-trip
 
 ---
 
